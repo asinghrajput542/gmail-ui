@@ -1,0 +1,19 @@
+.sidePanel{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    border: 2px solid whitesmoke;
+    height: 100vh;
+}
+.compose{
+    display: flex;
+    background-color: #80c3f7;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 5px;
+    justify-content: center;
+}
+.compose>svg{
+    margin-right: 5px;
+
+}

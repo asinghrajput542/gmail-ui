@@ -1,0 +1,29 @@
+.itemCard{
+    padding: 5px;
+    /* cursor: pointer; */
+   
+}
+
+.item{
+    display:flex;
+    /* justify-content: center; */
+    align-items: center;
+    
+    padding: 5px;
+    border-radius: 20px;
+
+}
+.item>span>svg{
+    margin-right: 1rem;
+}
+
+.item-isactive{
+    background-color: rgb(240, 150, 150);
+    font-weight: bold;
+    
+    
+}
+
+.item-isactive >span{
+    color: rgb(93, 8, 8);
+}

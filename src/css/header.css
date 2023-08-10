@@ -1,0 +1,49 @@
+.header{
+    display: flex;
+    grid-template-columns: 250px auto 200px;
+    border-bottom: solid whitesmoke 2px;
+    padding: 10px;
+}
+
+.left_header {
+    display: flex;
+    justify-content: center;
+}
+.left_header > img{
+    width: 109px;
+    height: 30px;
+    margin-left: 2px;
+}
+
+.mid_header{
+    margin-left: 10px;
+   flex: 0.7;
+   display: flex;
+   justify-content: center  ;
+}
+.search_mail{
+    display: flex;
+    align-items: center;
+    flex: 0.7;
+    background: whitesmoke;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+.search_mail> input{
+    padding-left: 5px;
+    flex: 0.7;
+    background: transparent;
+    border: none;
+    margin-left: 3px;
+    outline: 0;
+
+}
+
+.right_header{
+    display: flex;
+    justify-content: end;
+    flex: 0.3;
+}
+.right_header > svg{
+    margin: 5px;
+}
