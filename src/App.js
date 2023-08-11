@@ -1,13 +1,12 @@
 import Header from './components/Header';
 import SidePanel from './components/SidePanel';
 import './App.css'
-import MailTab from './components/MailTab';
+import Body from './components/Body';
 function App() {
   return (
     <div className="App">
       <Header/>
-      <SidePanel/>
-      <MailTab/>
+      <Body/>
     </div>
   );
 }

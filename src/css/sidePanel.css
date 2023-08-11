@@ -7,11 +7,14 @@
 }
 .compose{
     display: flex;
-    background-color: #80c3f7;
+    background-color: whitesmoke;
     padding: 15px;
     border-radius: 20px;
     margin: 5px;
     justify-content: center;
+}
+.compose:hover{
+    box-shadow: 5px 4px 2px rgb(131, 129, 129);
 }
 .compose>svg{
     margin-right: 5px;
