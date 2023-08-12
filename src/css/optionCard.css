@@ -20,10 +20,17 @@
 .item-isactive{
     background-color: rgb(240, 150, 150);
     font-weight: bold;
+    border-radius: 20px;
     
     
 }
 
 .item-isactive >span{
     color: rgb(93, 8, 8);
+}
+    /* cursor: pointer; */
+    /* cursor: pointer; */
+.itemCard:hover{
+    background-color: whitesmoke;
+    border-radius: 20px;
 }

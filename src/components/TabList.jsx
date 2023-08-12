@@ -1,18 +1,27 @@
 import React from 'react'
-import TabHader from './TabHader'
 import InboxOutlinedIcon from '@mui/icons-material/InboxOutlined';
 import '../css/tabList.css'
-import TabContent from './TabContent';
+import Tab from './Tab';
+import TabPane from './TabPane';
+import ContentPane from './ContentPane';
+
 const TabList = () => {
   return (
     <div className='tabList'>
-        <TabHader icon={<InboxOutlinedIcon/>} label={"Primary"} isActive={true} />
-         {/* <TabContent content={"hello boddy tab1"}/> */}
-        <TabHader icon={<InboxOutlinedIcon/>} label={"Primary"}  />
-        {/* <TabContent content={"hello boddy tab2"}/> */}
-      
-        <TabHader icon={<InboxOutlinedIcon/>} label={"Primary"}  />
-        {/* <TabContent content={"hello boddy tab3"}/> */}
+        <Tab>
+            <TabPane icon={<InboxOutlinedIcon/>} label={"Primary"} id={1}>
+                <ContentPane msg={"Hello how you doin...!?"} name={"Ayush Singh"} subject={"thik ho?"}></ContentPane>
+            </TabPane>
+            <TabPane icon={<InboxOutlinedIcon/>} label={"Primary 2"} id={2}>
+                <ContentPane msg={"Hello how you doin222222...!?"} name={"Ayush Singh"} subject={"thik ho?"}></ContentPane>
+            </TabPane> 
+            <TabPane icon={<InboxOutlinedIcon/>} label={"Primary 3"} id={3}>
+                <ContentPane msg={"Hello how you doin333333...!?"} name={"Ayush Singh"} subject={"thik ho?"}></ContentPane>
+            </TabPane>
+            <TabPane icon={<InboxOutlinedIcon/>} label={"Primary 4"} id={4}>
+                <ContentPane msg={"Hello how you doin44444...!?"} name={"Ayush Singh"} subject={"thik ho?"}></ContentPane>
+            </TabPane> 
+        </Tab>
       
     </div>
   )

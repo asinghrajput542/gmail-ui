@@ -1,6 +1,4 @@
 .tabList{
-    display: flex;
-    height: 50px;
-    border-bottom: 2px solid rgb(244, 240, 240);
-    width: 100vw;
+    
+    width: 100%;
 }

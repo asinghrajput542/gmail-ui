@@ -1,9 +1,16 @@
 import React from 'react'
+import '../css/tabContent.css'
+import MailCard from './MailCard'
 
-const TabContent = ({content}) => {
+const TabContent = ({msg,name,subject}) => {
   return (
-    <div>
-      <span>{content}</span>
+    <div className='tabContent'>
+      <MailCard msg={msg} name={name} subject={subject}/>
+      <MailCard msg={msg} name={name} subject={subject}/>
+      <MailCard msg={msg} name={name} subject={subject}/>
+      <MailCard msg={msg} name={name} subject={subject}/>
+      <MailCard msg={msg} name={name} subject={subject}/>
+      <MailCard msg={msg} name={name} subject={subject}/>
     </div>
   )
 }

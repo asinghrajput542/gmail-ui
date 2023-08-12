@@ -1,12 +1,15 @@
 import React from 'react'
-import '../css/tab.css'
+import '../css/tabHeader.css'
 
-const TabHader = ({icon,label,isActive}) => {
+const TabHader = ({icon,label,isActive,children}) => {
   return (
-    <div className={`tab ${isActive && 'tab-active'}`}>
+    <>
+    <div className={`tab-header ${isActive && 'tab-header-active'}`}>
       <span>{icon}</span>
       <span>{label}</span>
     </div>
+    {children}
+    </>
   )
 }
 

@@ -1,0 +1,27 @@
+.tab-header{
+    display: flex;
+    flex: 1;
+   width:100%;
+    padding: 5px;
+    align-items: center;
+   
+
+}
+
+.tab-header:hover{
+    background-color: whitesmoke;
+    border-radius: 4px;
+}
+
+.tab-header>span{
+    margin-right: 2rem;
+}
+
+.tab-header-active{
+    border-bottom: 5px solid rgb(130, 11, 11);
+    border-radius: 4px;
+    color: rgb(130, 11, 11);
+    background-color: whitesmoke;
+    
+    
+}
