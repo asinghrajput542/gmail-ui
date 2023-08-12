@@ -5,7 +5,7 @@
     border: 2px solid whitesmoke;
     height: 100vh;
 }
-.compose{
+.compose-button{
     display: flex;
     background-color: whitesmoke;
     padding: 15px;
@@ -13,10 +13,10 @@
     margin: 5px;
     justify-content: center;
 }
-.compose:hover{
+.compose-button:hover{
     box-shadow: 5px 4px 2px rgb(131, 129, 129);
 }
-.compose>svg{
+.compose-button>svg{
     margin-right: 5px;
 
 }

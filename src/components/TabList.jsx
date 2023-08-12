@@ -4,9 +4,11 @@ import '../css/tabList.css'
 import Tab from './Tab';
 import TabPane from './TabPane';
 import ContentPane from './ContentPane';
+import Compose from './Compose';
 
 const TabList = () => {
   return (
+    <>
     <div className='tabList'>
         <Tab>
             <TabPane icon={<InboxOutlinedIcon/>} label={"Primary"} id={1}>
@@ -24,6 +26,12 @@ const TabList = () => {
         </Tab>
       
     </div>
+    <div className='compose-body'>
+    {/* Hello */}
+      <Compose/>
+   
+  </div>
+  </>
   )
 }
 

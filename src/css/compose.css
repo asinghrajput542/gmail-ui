@@ -1,0 +1,65 @@
+.compose{
+    position: fixed; 
+    bottom: 0;
+    right: 70px;
+    min-width: 500px;
+    border: 2px solid rgb(222, 219, 219);
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px rgb(209, 208, 208);
+    
+}
+.compose-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    background: #333;
+    color: #fff;
+    padding: 2px;
+    
+    
+   
+}
+.compose-header-right{
+    padding-left: 4px;
+    
+
+    
+}
+.compose-header-left{
+    padding-right: 4px;
+    
+}
+.compose-header-left>svg{
+    cursor: pointer;
+}
+
+.compose-body-form{
+    display: flex;
+    flex-direction: column;
+    background: #fff
+    
+}
+.compose-body-form>input{
+    height: 40px;
+    padding-left: 4px;
+    
+}
+.compose-body-form>input,textarea{
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid rgb(222, 219, 219);
+}
+
+.compose-footer{
+    width: 40px;
+    padding: 5px;
+}
+.compose-footer>button{
+    padding: 5px;
+    background-color: #297be6;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}

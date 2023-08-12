@@ -11,7 +11,7 @@ import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
 const SidePanel = () => {
   return (
     <div className='sidePanel'>
-      <div className='compose'>
+      <div className='compose-button'>
         <CreateIcon/>
         <h3>Compose</h3>
       </div>
