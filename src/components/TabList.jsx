@@ -5,8 +5,10 @@ import Tab from './Tab';
 import TabPane from './TabPane';
 import ContentPane from './ContentPane';
 import Compose from './Compose';
+import { useSelector } from 'react-redux';
 
 const TabList = () => {
+    const isOpenCompose=useSelector(store=>store.composeMsg.openCompose)
   return (
     <>
     <div className='tabList'>
@@ -26,11 +28,10 @@ const TabList = () => {
         </Tab>
       
     </div>
-    <div className='compose-body'>
-    {/* Hello */}
+   { isOpenCompose && <div className='compose-body'>
       <Compose/>
    
-  </div>
+  </div>}
   </>
   )
 }

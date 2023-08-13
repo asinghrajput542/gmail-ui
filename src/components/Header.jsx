@@ -8,11 +8,18 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import AppsIcon from '@mui/icons-material/Apps';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import '../css/header.css'
+import { useDispatch, useSelector } from 'react-redux';
+import { changeOpenState } from '../utils/sidePanelSlice';
 const Header = () => {
+
+  const dispatch=useDispatch();
+  const handleOnClick=()=>{
+    dispatch(changeOpenState())
+  }
   return (
     <div className='header'>
         <div className='left_header'>
-            <IconButton>
+            <IconButton onClick={()=>handleOnClick()}>
             <ReorderIcon/>
             </IconButton>
             <img alt="logo"

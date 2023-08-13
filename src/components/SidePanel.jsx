@@ -7,11 +7,18 @@ import StarBorderIcon from '@mui/icons-material/StarBorder';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
 import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
+import { useDispatch } from 'react-redux';
+import { changeComposeMsgState } from '../utils/composeMsgSlice';
 
 const SidePanel = () => {
+  const dispatch=useDispatch()
+  const handleComposeOnClick=()=>{
+    dispatch(changeComposeMsgState())
+
+  }
   return (
     <div className='sidePanel'>
-      <div className='compose-button'>
+      <div className='compose-button' onClick={()=>handleComposeOnClick()}>
         <CreateIcon/>
         <h3>Compose</h3>
       </div>
