@@ -7,11 +7,14 @@ const composeMsgSlice=createSlice({
     },
     reducers:
         {
-            changeComposeMsgState:(state)=>{
-                (state.openCompose)?state.openCompose=false:state.openCompose=true;
+            openComposeMsg:(state)=>{
+               state.openCompose=true;
+            },
+            closeComposeMsg:(state)=>{
+                state.openCompose=false
             }
         }
 })
 
-export const {changeComposeMsgState} = composeMsgSlice.actions;
+export const {openComposeMsg,closeComposeMsg} = composeMsgSlice.actions;
 export default composeMsgSlice.reducer;

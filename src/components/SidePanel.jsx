@@ -8,12 +8,12 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
 import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
 import { useDispatch } from 'react-redux';
-import { changeComposeMsgState } from '../utils/composeMsgSlice';
+import { openComposeMsg } from '../utils/composeMsgSlice';
 
 const SidePanel = () => {
   const dispatch=useDispatch()
   const handleComposeOnClick=()=>{
-    dispatch(changeComposeMsgState())
+    dispatch(openComposeMsg())
 
   }
   return (
@@ -31,6 +31,7 @@ const SidePanel = () => {
         
 
       </div>
+      
     </div>
   )
 }

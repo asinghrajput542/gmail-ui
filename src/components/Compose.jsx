@@ -1,15 +1,22 @@
 import React from 'react'
 import '../css/compose.css'
 import ClearIcon from '@mui/icons-material/Clear';
+import { useDispatch } from 'react-redux';
+import { closeComposeMsg } from '../utils/composeMsgSlice';
 
 const Compose = () => {
+    const dispatch=useDispatch();
+    const handleCloseCompose=()=>{
+        dispatch(closeComposeMsg())
+
+    }
   return (
     <div className='compose'>
         <div className='compose-header'>
             <div className='compose-header-right'>
                 <p>New Message</p>
             </div>
-            <div className='compose-header-left'>
+            <div className='compose-header-left' onClick={()=>handleCloseCompose()}>
                 <ClearIcon/>
 
             </div>
